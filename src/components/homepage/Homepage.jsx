@@ -1,15 +1,10 @@
-// import "./../homepage/Homepage.css"; // Custom styles
-import "./../homepage/Homepage.css";
+import "./Homepage.css";
 function Homepage() {
   return (
     <>
       <div className="parent-container">
-        <div className="left-container">
-          {/* <!-- Content for the left container --> */}
-        </div>
-        <div className="right-container">
-          {/* <!-- Content for the right container --> */}
-        </div>
+        <div className="left-container"></div>
+        <div className="right-container"></div>
       </div>
     </>
   );

@@ -7,6 +7,11 @@ const Header = () => {
     <nav className="navbar">
       <div className="logo">
         <img src={logo} alt="Logo" />
+        <div className="logo-text">
+          Prime security <br />
+          & <br />
+          Placement services
+        </div>
       </div>
       <ul className="nav-links">
         <li>

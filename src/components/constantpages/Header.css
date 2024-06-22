@@ -1,14 +1,28 @@
 .navbar {
-  background-color: rgba(255, 255, 255, 0.4); /* White with 40% opacity */
+  background-color: rgba(255, 255, 255, 0.887); /* White with 40% opacity */
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: "Poppins", sans-serif; /* Poppins font */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the navbar */
+}
+
+.navbar .logo {
+  display: flex;
+  flex-direction: column; /* Stack the logo and text vertically */
+  align-items: center; /* Center the text below the logo */
 }
 
 .navbar .logo img {
   height: 40px; /* Adjust height as needed */
+}
+
+.navbar .logo .logo-text {
+  text-align: center; /* Center-align the text */
+  font-size: 10px; /* Adjust font size as needed */
+  line-height: 1.2; /* Adjust line height for spacing */
+  margin-top: 5px; /* Space between the logo and the text */
 }
 
 .navbar .nav-links {
@@ -16,10 +30,12 @@
   margin: 0;
   padding: 0;
   display: flex;
+  gap: 55px;
 }
 
 .navbar .nav-links li {
   margin-right: 20px;
+  position: relative; /* Ensure dropdown content is positioned correctly */
 }
 
 .navbar .nav-links li:last-child {
@@ -36,8 +52,8 @@
   color: #333; /* Darken text on hover */
 }
 
-.navbar .nav-links .dropdown {
-  position: relative;
+.navbar .nav-links .dropdown:hover .dropdown-content {
+  display: block; /* Show dropdown content on hover */
 }
 
 .navbar .nav-links .dropdown-content {
@@ -47,6 +63,8 @@
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  top: 100%; /* Position below the dropdown link */
+  left: 0;
 }
 
 .navbar .nav-links .dropdown-content a {
