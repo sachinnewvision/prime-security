@@ -1,8 +1,8 @@
 function Homepage() {
   return (
     <>
-      <div className="main-container">
-        <h1>main</h1>
+      <div className="image-container">
+        <img src="src\assets\bg_img.jpg" alt="bg-image" className="bg-image" />
       </div>
     </>
   );

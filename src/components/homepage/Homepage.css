@@ -1,0 +1,12 @@
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* 100% of the viewport height */
+  overflow: hidden; /* to ensure the image stays within the container */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* maintains aspect ratio while covering the container */
+}

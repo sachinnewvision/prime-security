@@ -1,0 +1,62 @@
+.navbar {
+  background-color: rgba(255, 255, 255, 0.4); /* White with 40% opacity */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins", sans-serif; /* Poppins font */
+}
+
+.navbar .logo img {
+  height: 40px; /* Adjust height as needed */
+}
+
+.navbar .nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar .nav-links li {
+  margin-right: 20px;
+}
+
+.navbar .nav-links li:last-child {
+  margin-right: 0;
+}
+
+.navbar .nav-links li a {
+  text-decoration: none;
+  color: black; /* Black text */
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+  color: #333; /* Darken text on hover */
+}
+
+.navbar .nav-links .dropdown {
+  position: relative;
+}
+
+.navbar .nav-links .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.4); /* White with 40% opacity */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.navbar .nav-links .dropdown-content a {
+  color: black; /* Black text */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .nav-links .dropdown-content a:hover {
+  background-color: #f9f9f9; /* Light gray background on hover */
+}
