@@ -1,8 +1,15 @@
+// import "./../homepage/Homepage.css"; // Custom styles
+import "./../homepage/Homepage.css";
 function Homepage() {
   return (
     <>
-      <div className="image-container">
-        <img src="src\assets\bg_img.jpg" alt="bg-image" className="bg-image" />
+      <div className="parent-container">
+        <div className="left-container">
+          {/* <!-- Content for the left container --> */}
+        </div>
+        <div className="right-container">
+          {/* <!-- Content for the right container --> */}
+        </div>
       </div>
     </>
   );
